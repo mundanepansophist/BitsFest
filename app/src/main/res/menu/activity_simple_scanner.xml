@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_flash"
+        android:title="@string/toggle_flash" />
+    <item
+        android:id="@+id/menu_auto_focus"
+        android:title="@string/toggle_flash" />
+    <item
+        android:id="@+id/menu_formats"
+        android:title="@string/choose_formats" />
+    <item
+        android:id="@+id/menu_camera_selector"
+        android:title="@string/select_camera" />
+</menu>

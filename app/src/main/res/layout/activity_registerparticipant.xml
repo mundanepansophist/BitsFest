@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textColorHint="#1565C0"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-medium"
+                    android:id="@+id/register_name"
+                    android:hint="NAME"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputcollege"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textColorHint="#1565C0"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-medium"
+                    android:id="@+id/register_college"
+                    android:hint="COLLEGE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textColorHint="#1565C0"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-medium"
+                    android:id="@+id/register_phone"
+                    android:hint="PHONE"
+                    android:inputType="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textColorHint="#1565C0"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-medium"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/register_email"
+                    android:hint="EMAIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputscancode"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_gravity="bottom"
+                    android:textColorHint="#1565C0"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-medium"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/register_scancode"
+                    android:hint="SCAN CODE"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+            <ImageButton
+                android:id="@+id/qr_scan"
+                android:background="@mipmap/ic_launcher"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <CheckBox
+                android:id="@+id/free_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="18dp"
+                android:text="Free Registration"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <CheckBox
+                android:id="@+id/free_accom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="18dp"
+                android:text="Free Accommodation"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="bottom|right"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/register_details"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            android:layout_width="56dp"
+            android:layout_height="56dp" />
+    </LinearLayout>
+</LinearLayout>
